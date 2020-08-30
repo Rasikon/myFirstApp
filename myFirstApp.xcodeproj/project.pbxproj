@@ -13,6 +13,8 @@
 		A27C867424F8F7AF0074470B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27C867224F8F7AF0074470B /* Main.storyboard */; };
 		A27C867624F8F7B10074470B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27C867524F8F7B10074470B /* Assets.xcassets */; };
 		A27C867924F8F7B10074470B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27C867724F8F7B10074470B /* LaunchScreen.storyboard */; };
+		A27C868124F9129C0074470B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C868024F9129C0074470B /* Person.swift */; };
+		A27C868524F9797B0074470B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C868424F9797B0074470B /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A27C867524F8F7B10074470B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27C867824F8F7B10074470B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27C867A24F8F7B10074470B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27C868024F9129C0074470B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A27C868424F9797B0074470B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2401E6024FC1BA300066485 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A27C866C24F8F7AF0074470B /* AppDelegate.swift */,
+				A27C867A24F8F7B10074470B /* Info.plist */,
+				A27C866E24F8F7AF0074470B /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A2401E6124FC1C1900066485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A27C868024F9129C0074470B /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2401E6224FC1C6100066485 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A27C867724F8F7B10074470B /* LaunchScreen.storyboard */,
+				A27C867224F8F7AF0074470B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A2401E6324FC1C8300066485 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A27C868424F9797B0074470B /* SecondViewController.swift */,
+				A27C867024F8F7AF0074470B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A2401E6424FC1CA400066485 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A27C867524F8F7B10074470B /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		A27C866024F8F7AF0074470B = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +104,11 @@
 		A27C866B24F8F7AF0074470B /* myFirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				A27C866C24F8F7AF0074470B /* AppDelegate.swift */,
-				A27C866E24F8F7AF0074470B /* SceneDelegate.swift */,
-				A27C867024F8F7AF0074470B /* ViewController.swift */,
-				A27C867224F8F7AF0074470B /* Main.storyboard */,
-				A27C867524F8F7B10074470B /* Assets.xcassets */,
-				A27C867724F8F7B10074470B /* LaunchScreen.storyboard */,
-				A27C867A24F8F7B10074470B /* Info.plist */,
+				A2401E6024FC1BA300066485 /* SupportingFiles */,
+				A2401E6324FC1C8300066485 /* ViewControllers */,
+				A2401E6224FC1C6100066485 /* Storyboards */,
+				A2401E6124FC1C1900066485 /* Model */,
+				A2401E6424FC1CA400066485 /* Sources */,
 			);
 			path = myFirstApp;
 			sourceTree = "<group>";
@@ -140,6 +186,8 @@
 			files = (
 				A27C867124F8F7AF0074470B /* ViewController.swift in Sources */,
 				A27C866D24F8F7AF0074470B /* AppDelegate.swift in Sources */,
+				A27C868124F9129C0074470B /* Person.swift in Sources */,
+				A27C868524F9797B0074470B /* SecondViewController.swift in Sources */,
 				A27C866F24F8F7AF0074470B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +333,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = myFirstApp/Info.plist;
+				INFOPLIST_FILE = myFirstApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +351,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = myFirstApp/Info.plist;
+				INFOPLIST_FILE = myFirstApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
